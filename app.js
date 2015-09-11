@@ -9,6 +9,16 @@ app.get('/',function(req,res){
 	res.json({res : 'hello world'});
 });
 
+app.get('/test',function(req,res){
+	res.jsonp({
+		name : 'ofer',
+		last : 'golibroda',
+		age : '28',
+		location : 'tel aviv'
+	})
+});
+
+
 app.listen(port,function(){
 	console.log('server up on ' + port);
 });
