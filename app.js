@@ -1,7 +1,7 @@
 var express = require('express'),
 	app = express();
 
-var port = process.argv[2] || 3456;
+var port = process.argv[2] || 3000;
 
 app.use(express.static('./public'));
 
